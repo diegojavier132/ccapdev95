@@ -1,0 +1,359 @@
+body
+{
+	background-color: rgb(0, 0, 0);
+  background-image: url(https://wallpaperaccess.com/full/1561985.jpg);
+  background-position: 100%;
+	color: white;
+}
+
+
+.h1
+{
+	color: white;
+}
+
+.cover
+{
+  text-align: center;
+
+  display: block;
+}
+
+.movie-infos .movie-title
+{
+	background-color: rgb(238, 232, 232);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	display: block;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.movie-infos
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(66, 65, 65);
+	border-radius: 10px;
+	padding: 10px;
+	word-wrap: break-word;
+    
+}
+
+.movie-infos p
+{
+   font-size: 20px;
+}
+
+.post
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: rgb(253, 253, 253);
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.author-picture{
+  text-align:center;
+	border-radius: 100px;
+	background-color: white;
+	margin-right: 0%;
+  width: 20%;
+ 
+}
+
+.author-picture img{
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 100px;
+  
+ 
+}
+
+.post-author h1 
+{
+  text-align: center;
+}
+
+.post-rating
+{
+  text-align: center;
+}
+.comment-header{
+  
+    padding: 0 0 0 25px;
+    margin-left: 0;
+  }
+
+.movie-title{
+    text-decoration: underline;
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.comment-header{
+  
+    padding: 0 0 0 25px;
+    margin-left: 0;
+  }
+
+.movie-title{
+    text-decoration: underline;
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header{
+  
+    padding: 0 0 0 25px;
+    margin-left: 0;
+  }
+  
+  .movie-title{
+    text-decoration: underline;
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .movie-title img
+  {
+    border-top: #54494B;
+    position: relative;
+    display: inline-flex;
+    border-width: 10px;
+    border-style: solid;
+
+    
+  }
+.post {
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.post-rating
+{
+
+  display: block;
+}
+
+  .post-rating hr 
+  {
+    width: 80%;
+  }
+
+  .post h1
+  {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  .review-content 
+  {
+    padding: 20px;
+    background-color: #c9c1c1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    width: 80%;
+    margin-left: 20px;
+  }
+  .container {
+    padding: 5% 10%;
+  }
+  
+  .talk-bubble {
+      margin: 45px;
+    display: inline-block;
+    position: relative;
+      width: 400px;
+      height: auto;
+      background-color: #F1F7ED;
+  }
+  .border{
+    border: 8px solid #54494B;
+  }
+  .round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+  
+  }
+  
+
+
+  .tri-right.border.btm-right-in:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: 30px;
+      bottom: -40px;
+      border: 20px solid;
+      border-color: #54494B #54494B transparent transparent;
+  }
+  .tri-right.btm-right-in:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    left: auto;
+      right: 38px;
+      bottom: -20px;
+      border: 12px solid;
+      border-color: #598272 #598272 transparent transparent;
+  }
+  
+  hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border: 5;
+    background-color: #91C7B1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  
+  .talktext{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+      text-align: left;
+    line-height: 1.5em;
+    background-color: #598272;
+    
+  }
+  
+  .user-info{
+      padding: 4% 4%;
+    height: 50px;
+    background-color: #91C7B1;
+  }
+  
+  .username{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0% 17%;
+    margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .title{
+    font-size: 10px;
+    font-weight: 450;
+    padding: 0% 17%;
+    
+  }
+  
+  .submission-date{
+    font-size: 14px;
+    font-style: italic;
+    padding: 0% 17%;
+  }
+  
+  .pfp {
+    float: left;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 3px solid rgb(116, 116, 116);;
+    border-radius: 50%;
+  }
+  
+  .rating {
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0px 40px 20px 40px;
+    background-color: #598272;
+  }
+  
+
+  .reply {
+    margin-left: 25%;
+    margin-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display:flex;
+    
+  }
+.reply textarea
+{
+  margin-left: 10px;
+  text-align: start;
+}
+
+button
+{
+  padding: 10px
+}
+
+
+
+.prompt h1
+{
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #362e2f;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.row2 {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}  
+
+.row2 ul {
+  
+list-style-type: none;
+margin: 0px;
+padding: 10px;
+overflow: hidden;
+background-color: rgb(161, 38, 38);
+}
+
+.row2 li {
+float: left;
+}
+
+.row2 li a {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.form-inline input 
+{
+  
+  margin-left: 40rem;
+  text-align: right;
+  
+  margin-top: 0.25rem;
+  padding: 0.5%;
+  
+}
+
+.form-inline button
+{
+  padding: 0.5%;
+
+}
+
+.imgPoster{
+  height: 1000px;
+  width: 1000px;
+}

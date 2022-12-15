@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile_style.css" />
+  </head>
+  <body>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="content" class="content content-full-width">
+            <!-- begin profile -->
+            <div class="profile">
+              <div class="profile-header">
+                <!-- BEGIN profile-header-cover -->
+                <div class="profile-header-cover"></div>
+                <!-- END profile-header-cover -->
+                <!-- BEGIN profile-header-content -->
+                <div class="profile-header-content">
+                  <!-- BEGIN profile-header-img -->
+                  <div class="profile-header-img">
+                    <img
+                      src="https://i.pinimg.com/474x/65/25/a0/6525a08f1df98a2e3a545fe2ace4be47.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <!-- END profile-header-img -->
+                  <!-- BEGIN profile-header-info -->
+                  <div class="profile-header-info">
+                    <h4 class="m-t-10 m-b-5"><%= user.username %></h4>
+                    <p class="m-b-10">Age: <%= user.age %></p>
+                    <a href="userin" class="btn btn-sm btn-info mb-2">Home</a>
+                  </div>
+                  <!-- END profile-header-info -->
+                </div>
+                <!-- END profile-header-content -->
+                <!-- BEGIN profile-header-tab -->
+                <ul class="profile-header-tab nav nav-tabs">
+                  <li class="nav-item">
+                    <a href="#" target="__blank" class="nav-link_">POSTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" target="__blank" class="nav-link_">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" target="__blank" class="nav-link_">WATCHLIST</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" target="__blank" class="nav-link_"
+                      >RECOMMENDED</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" target="__blank" class="nav-link_ active show"
+                      >FRIENDS</a
+                    >
+                  </li>
+                </ul>
+                <!-- END profile-header-tab -->
+              </div>
+            </div>
+            <!-- end profile -->
+            <!-- begin profile-content -->
+            <hr />
+
+            <div class="createpost-container">
+              <form
+                id="widget-form"
+                class="createpost_form"
+                name="form"
+                aria-label="post widget"
+              >
+                <div class="createpost_content">
+                  <textarea
+                    name="post"
+                    id="post-content"
+                    class="createpost_textarea scroller"
+                    placeholder="Write your post here"
+                  ></textarea>
+                </div>
+                <div class="createpost_actions post--actions">
+                  <div class="post-actions_attachments"></div>
+                  <div class="post-actions_widget">
+                    <button class="btn post-actions_publish">Post</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="profile-content">
+              <!-- begin tab-content -->
+              <div class="tab-content p-0">
+                <!-- begin #profile-post tab -->
+                <div class="tab-pane fade active show" id="profile-post">
+                  <!-- begin timeline -->
+                  <ul class="timeline">
+                    <li>
+                      <!-- begin timeline-time -->
+                      <div class="timeline-time">
+                        <span class="date">today</span>
+                        <span class="time">04:20</span>
+                      </div>
+                      <!-- end timeline-time -->
+                      <!-- begin timeline-icon -->
+                      <div class="timeline-icon">
+                        <a href="javascript:;">&nbsp;</a>
+                      </div>
+                      <!-- end timeline-icon -->
+                      <!-- begin timeline-body -->
+                      <div class="timeline-body">
+                        <div class="timeline-header">
+                          <span class="userimage"
+                            ><img
+                              src="https://i.pinimg.com/236x/aa/ec/b4/aaecb40269b4ab492dc6246e067a5d5f.jpg"
+                              alt=""
+                          /></span>
+                          <span class="username"
+                            ><a href="javascript:;">iLoveMovies123</a>
+                            <small></small
+                          ></span>
+                          <span class="pull-right text-muted">18 Views</span>
+                        </div>
+                        <div class="timeline-content">
+                          <p>
+                            DAHMER: Dahmer is a great movie and really helps me
+                            know about what Jeffrey Dahmer did. Its sad to see
+                            what happen to those men they did nothing wrong to
+                            deserve that and the head in the chest to finding
+                            out that he really put a head in the chest in real
+                            life and then refuses to let his dad open the chest
+                            but over all its a great movie.
+                          </p>
+                        </div>
+                        <div class="timeline-likes">
+                          <div class="stats-right">
+                            <span class="stats-text">259 Shares</span>
+                            <span class="stats-text">21 Comments</span>
+                          </div>
+                          <div class="stats">
+                            <span class="fa-stack fa-fw stats-icon">
+                              <i
+                                class="fa fa-circle fa-stack-2x text-danger"
+                              ></i>
+                              <i
+                                class="fa fa-heart fa-stack-1x fa-inverse t-plus-1"
+                              ></i>
+                            </span>
+                            <span class="fa-stack fa-fw stats-icon">
+                              <i
+                                class="fa fa-circle fa-stack-2x text-primary"
+                              ></i>
+                              <i
+                                class="fa fa-thumbs-up fa-stack-1x fa-inverse"
+                              ></i>
+                            </span>
+                            <span class="stats-total">4.3k</span>
+                          </div>
+                        </div>
+                        <div class="timeline-footer">
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>
+                            Like</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-comments fa-fw fa-lg m-r-3"></i>
+                            Comment</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-share fa-fw fa-lg m-r-3"></i>
+                            Share</a
+                          >
+                        </div>
+                        <div class="timeline-comment-box">
+                          <div class="user">
+                            <img
+                              src="https://i.pinimg.com/236x/aa/ec/b4/aaecb40269b4ab492dc6246e067a5d5f.jpg"
+                            />
+                          </div>
+                          <div class="input">
+                            <form action="">
+                              <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control rounded-corner"
+                                  placeholder="Write a comment..."
+                                />
+                                <span class="input-group-btn p-l-10">
+                                  <button
+                                    class="btn btn-primary f-s-12 rounded-corner"
+                                    type="button"
+                                  >
+                                    Comment
+                                  </button>
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end timeline-body -->
+                    </li>
+                    <li>
+                      <!-- begin timeline-time -->
+                      <div class="timeline-time">
+                        <span class="date">yesterday</span>
+                        <span class="time">20:17</span>
+                      </div>
+                      <!-- end timeline-time -->
+                      <!-- begin timeline-icon -->
+                      <div class="timeline-icon">
+                        <a href="javascript:;">&nbsp;</a>
+                      </div>
+                      <!-- end timeline-icon -->
+                      <!-- begin timeline-body -->
+                      <div class="timeline-body">
+                        <div class="timeline-header">
+                          <span class="userimage"
+                            ><img
+                              src="https://i.pinimg.com/236x/aa/ec/b4/aaecb40269b4ab492dc6246e067a5d5f.jpg"
+                              alt=""
+                          /></span>
+                          <span class="username">iLoveMovies123</span>
+                          <span class="pull-right text-muted">82 Views</span>
+                        </div>
+                        <div class="timeline-content">
+                          <p>Location: United States</p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>
+                            Like</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-comments fa-fw fa-lg m-r-3"></i>
+                            Comment</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-share fa-fw fa-lg m-r-3"></i>
+                            Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- end timeline-body -->
+                    </li>
+                    <li>
+                      <!-- begin timeline-time -->
+                      <div class="timeline-time">
+                        <span class="date">24 February 2014</span>
+                        <span class="time">08:17</span>
+                      </div>
+                      <!-- end timeline-time -->
+                      <!-- begin timeline-icon -->
+                      <div class="timeline-icon">
+                        <a href="javascript:;">&nbsp;</a>
+                      </div>
+                      <!-- end timeline-icon -->
+                      <!-- begin timeline-body -->
+                      <div class="timeline-body">
+                        <div class="timeline-header">
+                          <span class="userimage"
+                            ><img
+                              src="https://i.pinimg.com/236x/aa/ec/b4/aaecb40269b4ab492dc6246e067a5d5f.jpg"
+                              alt=""
+                          /></span>
+                          <span class="username">iLoveMovies123</span>
+                          <span class="pull-right text-muted">1,282 Views</span>
+                        </div>
+                        <div class="timeline-content">
+                          <p class="lead">
+                            <i class="fa fa-quote-left fa-fw pull-left"></i>
+                            INTERSTELLAR: Time & space , these are two very
+                            important phenomrnon which kept humanity think for
+                            thousand of years about this vast infinite universe
+                            and to find out its unapproachable interstellar
+                            destinations like solar system , milkyway , planets
+                            , blackholes ,etc. Highly talented great film maker
+                            Christopher nolan has shown his top class
+                            directorial skills by this great Sci fi saga "
+                            Interstellar" . Probably its one of the best movie
+                            ever made its not only about finding new home for
+                            humanity in interstellar destination but its a
+                            emotional sci fi drama also a unbreakable
+                            relationship between father & daughter which has
+                            been portrayed in memorable manner never before any
+                            director been able to do. Theme of movie is about a
+                            space mission where a team of astronauts have been
+                            assigned a project to find out a new home for human
+                            race in vast infinite interstellar distances which
+                            also have been sewed with emotional father daughter
+                            relationship . This great sci fi will left you in
+                            deepest portion of your mind where science & emotion
+                            collide with each other . From script to screenplay
+                            , cinematography ,original score , editing , visual
+                            effects , performances , direction everything is
+                            5/5. Just give heed to extraordinary directorial
+                            skills of Nolan the way he shot space travel
+                            sequences which looks so real that you can feel them
+                            . Memorable performances by Mathew Mcconnaughy ,
+                            Jessica chastin , Michael Caine , matt Damon . The
+                            moment when Cooper left the earth for space mission
+                            and then checks the logs of past years he found that
+                            his little daughter is of his age now , that leave
+                            everyone in teary eyes , his promise to his daughter
+                            that when they will meet again she will be of his
+                            age she is saying that's right time dad to come back
+                            . Just feel emotional intensity of this moment which
+                            is unparalleled a great piece of art in cinematic
+                            history . This movie leave us to a very likely
+                            question is there a future for humanity in
+                            interstellar infinite universe , hopefully there is
+                            it will be our great human efforts which will
+                            unravel the secrets of ambiguous universe .
+                            Astonishingly brilliant original score of Hans
+                            zimmer is another highlight of this great sci fi
+                            saga without which it couldn't have been a memorable
+                            masterpiece . Very few filmmaker have reached to
+                            such perfection in sci fi zoner at which nolan
+                            reached through interstellar , I would recommend
+                            this great sci fi saga to everyone , just feel the
+                            secrets of mysterious time & space which have shaped
+                            our lives , it's a great lifetime experience .
+                            <i class="fa fa-quote-right fa-fw pull-right"></i>
+                          </p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>
+                            Like</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-comments fa-fw fa-lg m-r-3"></i>
+                            Comment</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-share fa-fw fa-lg m-r-3"></i>
+                            Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- end timeline-body -->
+                    </li>
+                    <li>
+                      <!-- begin timeline-time -->
+                      <div class="timeline-time">
+                        <span class="date">10 January 2014</span>
+                        <span class="time">20:43</span>
+                      </div>
+                      <!-- end timeline-time -->
+                      <!-- begin timeline-icon -->
+                      <div class="timeline-icon">
+                        <a href="javascript:;">&nbsp;</a>
+                      </div>
+                      <!-- end timeline-icon -->
+                      <!-- begin timeline-body -->
+                      <div class="timeline-body">
+                        <div class="timeline-header">
+                          <span class="userimage"
+                            ><img
+                              src="https://i.pinimg.com/236x/aa/ec/b4/aaecb40269b4ab492dc6246e067a5d5f.jpg"
+                              alt=""
+                          /></span>
+                          <span class="username">iLoveMovies123</span>
+                          <span class="pull-right text-muted"
+                            >1,021,282 Views</span
+                          >
+                        </div>
+                        <div class="timeline-content">
+                          <h4 class="template-title">
+                            <i class="fa fa-map-marker text-danger fa-fw"></i>
+                            795 Folsom Ave, Suite 600 San Francisco, CA 94107
+                          </h4>
+                          <p>
+                            In hac habitasse platea dictumst. Pellentesque
+                            bibendum id sem nec faucibus. Maecenas molestie,
+                            augue vel accumsan rutrum, massa mi rutrum odio, id
+                            luctus mauris nibh ut leo.
+                          </p>
+                          <p class="m-t-20">
+                            <img
+                              src="../assets/img/gallery/gallery-5.jpg"
+                              alt=""
+                            />
+                          </p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i>
+                            Like</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-comments fa-fw fa-lg m-r-3"></i>
+                            Comment</a
+                          >
+                          <a
+                            href="javascript:;"
+                            class="m-r-15 text-inverse-lighter"
+                            ><i class="fa fa-share fa-fw fa-lg m-r-3"></i>
+                            Share</a
+                          >
+                        </div>
+                      </div>
+                      <!-- end timeline-body -->
+                    </li>
+                    <li>
+                      <!-- begin timeline-icon -->
+                      <div class="timeline-icon">
+                        <a href="javascript:;">&nbsp;</a>
+                      </div>
+                      <!-- end timeline-icon -->
+                      <!-- begin timeline-body -->
+                      <div class="timeline-body">Loading...</div>
+                      <!-- begin timeline-body -->
+                    </li>
+                  </ul>
+                  <!-- end timeline -->
+                </div>
+                <!-- end #profile-post tab -->
+              </div>
+              <!-- end tab-content -->
+            </div>
+            <!-- end profile-content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

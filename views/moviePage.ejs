@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= movie.title %> Review</title>
+    <link rel="stylesheet" href="pages_style.css" />
+  </head>
+  <body>
+    <div class="row2">
+      <ul>
+        <li><a href="userin">Home</a></li>
+        <li><a href="movies">Movies</a></li>
+        <li><a href="tvseries">TV Series</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="/">Log Out</a></li>
+      </ul>
+    </div>
+    <%= movie.title %>
+    <div class="movie-infos">
+      <div class="movie-title">
+        <!--  <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt=""> -->
+        <img class="imgPoster" src="<%= movie.img %>" alt="" />
+      </div>
+      <p>
+        <%= movie.plot%>
+        <!-- Interstellar is a 2014 science fiction film co-written, directed and produced by Christopher Nolan.
+	It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine.
+	Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near
+	Saturn in search of a new home for mankind.-->
+          
+      </p>
+      </div>
+      <% for (var i = 0; i < movie.comments.length; i++) { %>
+        <div class="post">
+          <div class="author-picture">
+            <img
+              src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-image-icon-default-avatar-profile-icon-social-media-user-vector-image-209162840.jpg"
+              height="100px"
+              width="100px"
+              alt=""
+              srcset=""
+            />
+            <h1><%-movie.comments[i].user%></h1>
+            <p>Rating: ⭐⭐⭐⭐⭐/5</p>
+            <p><%-movie.comments[i].likes%></p>
+          </div>
+      
+          <div class="review-content">
+            <p><%-movie.comments[i].content%></p>
+          </div>
+        </div>
+      <% } %>
+      
+    </div>
+  </body>
+</html>
